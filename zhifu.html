@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+		<title></title>
+	<style type="text/css">
+		.Container{
+			 width:1000px;
+			 height:650px;
+    		 margin:0 auto;/*设置整个容器在浏览器中水平居中*/
+    		 background:#022;
+		}
+		.header{
+			height:80px;
+			background: #6495ED;
+		}
+		.logo{
+			padding:20px 50px;
+			text-align:center;
+			color:#121212;
+			font-size: 20px;
+		}
+		.content{
+			margin-top: 20px;
+			height:570px;
+			background: #EED2EE;
+		}
+		.c-left{
+			height:450px;
+			width:100px;
+			float:left;
+			background: #EE7AE9;
+			
+		}
+		.c-right{
+			width:900px;
+			height:450px;
+			float:left;
+			background: #FFE4B5;
+		}
+		.boView{
+			padding-top: 30px;
+			text-align: center;
+		}
+		.shupai{
+			font-size:14px;
+			line-height: 14px;
+			word-wrap: break-word;
+			float:left;
+		}
+		.shenglue{
+			text-align: center;
+			line-height: 14px;
+			width:100px;
+			font-size: 14px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		
+	</style>
+	</head>
+	<body>
+		<div class="Container">
+			<input type=text onkeyup="if(this.value>9999999999999.99){this.value=this.value.substr(0,13)}" maxlength="16">  
+			<input type=text onkeyup="if(this.value>9999999999999){if(this.value>9999999999999.01){this.value=this.value.substr(0,15)}else{this.value=this.value.substr(0,13)}}" maxlength="15">
+			<input type=text onkeyup="if(this.value>9999999999999){if(this.value.contains('.')){this.value=this.value.substr(0,15)}else{this.value=this.value.substr(0,13)}}">
+			<!--<input type=text onkeyup="this.value = this.value.replace(/^-?\d{13}(\.?\d{0,2})?$/, '');">
+			<input type=text onkeyup="this.value = this.value.replace(/^-?\d{13}+(\.\d{1,2})?)$/,'');">
+			<input type=text onkeyup="this.value = this.value.replace(/^-?\d{13}+(.[0-9]{2})?)$/,'');">
+			<input type=text onkeyup="this.value = this.value.replace(/^((?!0)\d+(.\d{1,2})?)$/,'');">-->
+			
+			
+			  <div class="header">HeadValu
+			      <div class="logo">This is a web page!</div>
+			  </div>
+			  <div class="content">
+			  	<div class="c-left">
+			  		<div style="padding-top:20px;height:60px;">会当凌绝顶，一览众山小;</div>
+			  		<div class="shenglue">会当凌绝顶，一览众山小;</div>
+			  		<div></div>
+			  	</div>
+			  	<div class="c-right"></div>
+			  	<div class="boView">
+			  	   <div style="font-size:12px;">公司置业人生何处不相逢</div>
+			    </div>
+			  </div
+		</div>
+	</body>
+</html>
